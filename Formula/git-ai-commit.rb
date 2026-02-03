@@ -5,21 +5,21 @@
 class GitAiCommit < Formula
   desc "Generate Git commit messages from staged diffs using your preferred LLM CLI."
   homepage "https://github.com/takai/git-ai-commit"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.0/git-ai-commit_0.3.0_darwin_amd64.zip"
-      sha256 "a87079090c58638c5b2a3af3ad663ac834ef42fb10e3b1a77892b299fdda6aa6"
+      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.1/git-ai-commit_0.3.1_darwin_amd64.zip"
+      sha256 "9d98c36769187ac82dd4a3041e84d33a3eea2969afec6bebc4595006d3bfb8ed"
 
       def install
         bin.install "git-ai-commit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.0/git-ai-commit_0.3.0_darwin_arm64.zip"
-      sha256 "967376720ead49a8ff082fb738ea3e307abdfe686ca076103ef11e1e558ef17c"
+      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.1/git-ai-commit_0.3.1_darwin_arm64.zip"
+      sha256 "a9d8c1b98daabd9c2e948d7ff4af7d9063313e83a3f46c93ffc30c26d0149fa9"
 
       def install
         bin.install "git-ai-commit"
@@ -29,15 +29,15 @@ class GitAiCommit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.0/git-ai-commit_0.3.0_linux_amd64.tar.gz"
-      sha256 "532e6d9b47a9a2a16868eac04f03693f82f24828e3283fde95566da04379ef36"
+      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.1/git-ai-commit_0.3.1_linux_amd64.tar.gz"
+      sha256 "8ebca6cb74425bb404cf98672f2816f105b93449ae6e29bc440ba4dc9a40890f"
       def install
         bin.install "git-ai-commit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.0/git-ai-commit_0.3.0_linux_arm64.tar.gz"
-      sha256 "8e3b4263c1ad627c89e04f8f925df6b2caf97a5aaf84a3eb1aa4146f0c4c1ff5"
+      url "https://github.com/takai/git-ai-commit/releases/download/v0.3.1/git-ai-commit_0.3.1_linux_arm64.tar.gz"
+      sha256 "239fa1c9535619bf05f2ea5afde52802d1282161c14e1ac763b1be1cbd95452a"
       def install
         bin.install "git-ai-commit"
       end
